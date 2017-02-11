@@ -244,8 +244,8 @@ body {
 }
 
 .wrapper {
-  margin: 100px auto;
-  width: 820px;
+  margin: auto;
+  /*width: 820px;*/
   position: relative;
 }
 .wrapper:before, .wrapper:after {
