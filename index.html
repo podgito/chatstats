@@ -1,0 +1,36 @@
+<html data-ng-app="app">
+
+<head>
+    <title>Pollitos Chat</title>
+    <LINK REL=StyleSheet HREF="css/countdown.css" TYPE="text/css" >
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="time-part-wrapper">
+
+            <timer end-time="1486936800000">
+                <div class="time-part"> <div class="digit-wrapper"> <span class="digit">{{ddays}}</span></div></div>, 
+                <div class="time-part"> <div class="digit-wrapper"> <span class="digit">{{hhours}}:</span></div></div>, 
+                <div class="time-part"> <div class="digit-wrapper"> <span class="digit">{{mminutes}}:</span></div></div>, 
+                <div class="time-part"> <div class="digit-wrapper"> <span class="digit">{{sseconds}}</span></div></div>, 
+
+
+                </timer>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
+    <script src="js/humanize-duration.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="app/angular-timer.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/dataService.js"></script>
+    <script src="app/dataController.js"></script>
+
+</body>
+
+</html>

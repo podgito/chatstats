@@ -1,0 +1,13 @@
+body{
+    
+}
+
+.wordcloud
+{
+    height: 500px;
+    background-color: inherit !important;
+}
+
+.container{
+    background-color: #eee;
+}
