@@ -3,10 +3,10 @@
 
     angular
         .module('app')
-        .service('dataService', dataService);
+        .service('wordsService', wordsService);
 
     dataService.inject = [''];
-    function dataService() {
+    function wordsService() {
         this.wordCloudData = wordCloudData;
 
         ////////////////

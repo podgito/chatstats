@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-        <LINK REL=StyleSheet HREF="css/stats.css" TYPE="text/css">
+    <LINK REL=StyleSheet HREF="css/stats.css" TYPE="text/css">
 </head>
 
 <body data-ng-controller="dataController">
@@ -17,6 +17,11 @@
         <div class="row">
             <div class="col-md-6">
                 <h1>Happy Birthday, Pollita!</h1>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
                 <p>
                     I am bringing this project back, that I started ages ago. This time I wanted to do proper analysis on the data and see what
                     we can infer from it. So I'll try update it once a month and you can suggest queries to do on that data.
@@ -25,13 +30,33 @@
                 <p>I hope it makes you smile.</p>
             </div>
 
+            <div class="col-md-6">
+                <div id="top-words-table">
+                    <!--Something wrong with this table-->
+                    <!--<table class="table table-striped">
+                        <tr>
+                            <th></th>
+                            <th>Count</th>
+                            </thead>
+                            <tr>
+                                <td>Test1</td>
+                                <td>1,234</td>
+                            </tr>
+                            <tr>
+                                <td>Test1</td>
+                                <td>1,234</td>
+                            </tr>
+                    </table>-->
+                </div>
+            </div>
+
         </div>
     </div>
 
 
     <script src="/Scripts/jquery-1.9.1.min.js"></script>
     <script src="http://code.highcharts.com/highcharts.js"></script>
-    <script src="app/wordCloud.js"></script>
+    <script src="js/wordCloud.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
     <script src="js/humanize-duration.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>

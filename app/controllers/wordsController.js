@@ -3,10 +3,10 @@
 
     angular
         .module('app')
-        .controller('dataController', dataController);
+        .controller('wordsController', wordsController);
 
-    dataController.inject = ['dataService'];
-    function dataController(dataService) {
+    wordsController.inject = ['wordsService'];
+    function wordsController(wordsService) {
         var vm = this;
         
 
@@ -15,7 +15,7 @@
         ////////////////
 
         function activate() {
-            var list = dataService.wordCloudData();
+            var list = wordsService.wordCloudData();
             WordCloud(document.getElementById('wordCloud'), { list: list , weightFactor: 0.09 } );
 
          }
