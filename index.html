@@ -1,58 +1,30 @@
-<html data-ng-app="app">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <title>Pollitos Chat</title>
-    <LINK REL=StyleSheet HREF="css/countdown.css" TYPE="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Stats</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous" />
 </head>
 
 <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="fluid-container">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Words</a></li>
+
+            </ul>
+        </div>
+    </nav>
 
     <div class="container">
         <div class="row">
-            <div class="wrapper" data-ng-controller="timerController">
-                <div class="time-part-wrapper">
-
-                    <timer end-time="bDayTime" finish-callback="timerFinished()">
-                        <div class="time-part">
-                            <div class="digit-wrapper"> <span class="digit">{{hhours}}:</span></div>
-                        </div>
-                        <div class="time-part">
-                            <div class="digit-wrapper"> <span class="digit">{{mminutes}}:</span></div>
-                        </div>
-                        <div class="time-part">
-                            <div class="digit-wrapper"> <span class="digit">{{sseconds}}</span></div>
-                        </div>
-
-
-                    </timer>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="row" data-ng-show="canProgress">
-            <div class="col-md-push-4"></div>
-            <div class="col-md-2">
-                <button class="btn btn-success" data-ng-click="window.location='words-1.html'">Continue</button>
-            </div>
+            <div class="col-lg-6">I clearly love saying Pollita. It's a very cute name</div>
+            <div class="col-lg-6" id="word-cloud"></div>
         </div>
     </div>
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
-    <script src="js/humanize-duration.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-    <script src="app/directives/angular-timer.js"></script>
-    <script src="app/app.js"></script>
-    <script src="app/controllers/timerController.js"></script>
-
 </body>
 
 </html>

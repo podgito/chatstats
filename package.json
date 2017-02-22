@@ -1,0 +1,24 @@
+{
+  "name": "Web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/podgito/chatstats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/podgito/chatstats/issues"
+  },
+  "homepage": "https://github.com/podgito/chatstats#readme",
+  "devDependencies": {
+    "angular": "^1.6.2",
+    "webpack": "^2.2.1"
+  }
+}

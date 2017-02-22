@@ -5,7 +5,7 @@
         .module('app')
         .service('wordsService', wordsService);
 
-    dataService.inject = [''];
+    wordsService.inject = [''];
     function wordsService() {
         this.wordCloudData = wordCloudData;
 
