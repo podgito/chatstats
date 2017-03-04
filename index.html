@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-ng-app="app">
 
 <head>
     <title>Chat Stats</title>
@@ -14,17 +14,23 @@
         <div class="fluid-container">
             <ul class="nav navbar-nav">
                 <li><a href="#">Words</a></li>
-
             </ul>
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" style="margin-top:80px;" data-ng-controller="dataController">
+        <!--<div data-ng-include="'partial_views/header.html'"></div>-->
         <div class="row">
-            <div class="col-lg-6">I clearly love saying Pollita. It's a very cute name</div>
+            <input type="text" data-ng-model="test" /> {{test}}
+           
+            <div class="col-lg-6"></div>
             <div class="col-lg-6" id="word-cloud"></div>
         </div>
     </div>
+
+    <script src="js/wordCloud.js"></script>
+    <script src="js/vendor.bundle.js"></script>
+    <script src="js/app.bundle.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,12 @@
-(function() {
+(function () {
     'use strict';
 
     angular.module('app', [
-        'timer'
+       // 'timer'
     ]);
+
+
+    //require('./directives');
+    require('./services');
+    require('./controllers');
 })();
