@@ -13,7 +13,7 @@
             })
             .when('/wordcloud', {
                 templateUrl: 'views/wordcloud.html',
-                //controller: 'wordsController'
+                controller: 'wordsController'
             })
             
         });
