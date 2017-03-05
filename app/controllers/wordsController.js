@@ -1,23 +1,23 @@
-(function() {
-'use strict';
+// (function() {
+// 'use strict';
 
-    angular
-        .module('app')
-        .controller('wordsController', wordsController);
+//     angular
+//         .module('app')
+//         .controller('wordsController', wordsController);
 
-    wordsController.inject = ['wordsService'];
-    function wordsController(wordsService) {
-        var vm = this;
+//     wordsController.inject = ['wordsService'];
+//     function wordsController(wordsService) {
+//         var vm = this;
         
 
-        activate();
+//         activate();
 
-        ////////////////
+//         ////////////////
 
-        function activate() {
-            var list = wordsService.wordCloudData();
-            WordCloud(document.getElementById('wordCloud'), { list: list , weightFactor: 0.09 } );
+//         function activate() {
+//             var list = wordsService.wordCloudData();
+//             WordCloud(document.getElementById('wordCloud'), { list: list , weightFactor: 0.09 } );
 
-         }
-    }
-})();
+//          }
+//     }
+// })();

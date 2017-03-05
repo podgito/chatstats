@@ -20,6 +20,8 @@
   "homepage": "https://github.com/podgito/chatstats#readme",
   "devDependencies": {
     "angular": "^1.6.2",
+    "d3": "^4.7.1",
+    "d3-cloud": "^1.2.4",
     "webpack": "^2.2.1"
   }
 }

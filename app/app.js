@@ -11,6 +11,11 @@
                 templateUrl: 'views/home.html',
                 controller: 'homeController'
             })
+            .when('/wordcloud', {
+                templateUrl: 'views/wordcloud.html',
+                //controller: 'wordsController'
+            })
+            
         });
 
 
