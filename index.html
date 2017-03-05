@@ -7,6 +7,8 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="css/stats.css">
 </head>
 
 <body>
@@ -18,14 +20,8 @@
         </div>
     </nav>
 
-    <div class="container" style="margin-top:80px;" data-ng-controller="dataController">
-        <!--<div data-ng-include="'partial_views/header.html'"></div>-->
-        <div class="row">
-            <input type="text" data-ng-model="test" /> {{test}}
-           
-            <div class="col-lg-6"></div>
-            <div class="col-lg-6" id="word-cloud"></div>
-        </div>
+    <div class="container" style="margin-top:80px;">
+        <div data-ng-view></div>
     </div>
 
     <script src="js/wordCloud.js"></script>

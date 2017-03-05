@@ -9,5 +9,20 @@ body{
 }
 
 .container{
-    background-color: #eee;
+    background-color: #fafafa;
+}
+
+.home-grid{
+
+}
+
+.home-grid-item{
+    border: 1px solid #eee;
+    border-right: 0 !important;
+    height: 210px;
+    
+}
+
+.home-grid-item:last-child{
+    border-right: 1px;
 }

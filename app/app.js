@@ -2,8 +2,16 @@
     'use strict';
 
     angular.module('app', [
-       // 'timer'
+        require('angular-route')
     ]);
+
+    angular.module('app')
+        .config(function ($routeProvider) {
+            $routeProvider.when('/', {
+                templateUrl: 'views/home.html',
+                controller: 'homeController'
+            })
+        });
 
 
     //require('./directives');
