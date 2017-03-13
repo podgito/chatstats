@@ -9,20 +9,46 @@ body{
 }
 
 .container{
-    background-color: #fafafa;
+    /*background-color: #fafafa;*/
 }
 
 .home-grid{
 
 }
 
-.home-grid-item{
+.home-grid-item-container{
     border: 1px solid #eee;
     border-right: 0 !important;
     height: 210px;
-    
+    padding:8px;
+
 }
 
-.home-grid-item:last-child{
+.home-grid-item-container:last-child{
     border-right: 1px;
+}
+.home-grid-item{
+    background-color: #fafafa;    
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-size: 380px;
+}
+
+.home-grid-item::after{
+    content: "";
+  background: url(image.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+
+}
+
+
+.home-grid-item-wordcloud{
+    background-image: url('/content/images/wordcloud-sample.png');
 }
